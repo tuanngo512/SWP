@@ -5,6 +5,8 @@
  */
 package dtos;
 
+import java.sql.Date;
+
 /**
  *
  * @author ACER
@@ -13,6 +15,8 @@ public class Order {
    private Account Acc;
    private String Address;
    private Cart AccCart;
+   private Date order_time;
+   private Date shipping_time;
 
     public Order() {
     }
@@ -46,5 +50,23 @@ public class Order {
     public void setAccCart(Cart AccCart) {
         this.AccCart = AccCart;
     }
+
+    public Date getOrder_time() {
+        return order_time;
+    }
+
+    public void setOrder_time(Date order_time) {
+        this.order_time = order_time;
+    }
+
+    public Date getShipping_time() {
+        return shipping_time;
+    }
+
+    public void setShipping_time(Date shipping_time) {
+        this.shipping_time = shipping_time;
+    }
+    
+    
    
 }
