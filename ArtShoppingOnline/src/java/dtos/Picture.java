@@ -10,14 +10,15 @@ package dtos;
  * @author ACER
  */
 public class Picture {
-    private String IdArt,Author,Img,Discription,Size,Year;
+    private String Name,IdArt,Author,Img,Discription,Size,Year;
     private Boolean Status;
     private int like;
     private double Price;
     public Picture() {
     }
 
-    public Picture(String IdArt, String Author, String Img, String Discription, String Size, String Year, Boolean Status, double Price, int like) {
+    public Picture(String Name, String IdArt, String Author, String Img, String Discription, String Size, String Year, Boolean Status, double Price, int like) {
+        this.Name = Name;
         this.IdArt = IdArt;
         this.Author = Author;
         this.Img = Img;
@@ -29,6 +30,14 @@ public class Picture {
         this.like = like;
     }
 
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+    
     public String getIdArt() {
         return IdArt;
     }
